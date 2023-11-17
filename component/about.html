@@ -56,7 +56,20 @@
 <!-- lich su hinh thanh -->
 
     <div class="w-3/5 m-auto py-20">
-        <h3><span class="text-[#F6601B] underline underline-offset-4 font-medium">Trang chủ</span> / Giới thiệu về chúng tôi</h3>
+        <nav class="flex" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+            <li class="inline-flex items-center">
+                <a class="text-[#F6601B] underline underline-offset-4 font-medium" href="../index.html" class="inline-flex items-center">
+                    Trang chủ
+                </a>
+            </li>
+            <li aria-current="page">
+                <div class="flex items-center">
+                    <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">/ Giới thiệu về chúng tôi</span>
+                </div>
+            </li>
+        </ol>
+        </nav>
         <h1 class="text-3xl font-bold text-center pt-8 pb-4">Lịch sử hình thành</h1>
         <hr style="background-color: #F63618;border-radius: 20px;height: 5px;width: 8%;margin: 0 auto;">
         <ol class="flex items-center">

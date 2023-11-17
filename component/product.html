@@ -45,19 +45,50 @@
         <hr style="background-color: #fcfcfc;border-radius: 20px;height: 5px;width: 5%;margin: 0 auto;">
         <p class="w-1/2 m-auto text-center text-white pt-8 pb-4">U -Money cung cấp cho Khách hàng những sản phẩm với tính năng nổi trội.</p>          
     </div>
-    <div class="w-3/5 m-auto grid grid-cols-2 gap-8 py-16">
-        <div>
-            <h2 class="font-medium border-b-4 hover:text-[#FF5C01] text-center hover:border-[#FF5C01] text-2xl py-2">U-money</h2>
-            <img src="../assets/img/img-product.png" alt="">
+    <div class="pb-8">
+        <div class="w-3/5 m-auto gap-8 py-16">
+            <div class="mb-4">
+                <ul class="flex flex-wrap -mb-px place-content-around text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block font-medium border-b-4 focus:text-[#FF5C01] text-center focus:border-[#FF5C01] text-2xl py-2" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">U-money</button>
+                    </li>
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block font-medium border-b-4 focus:text-[#FF5C01] text-center focus:border-[#FF5C01] text-2xl py-2" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Cổng thanh toán</button>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div >
-            <h2 class="font-medium border-b-4 hover:text-[#FF5C01] text-center hover:border-[#FF5C01] text-current text-2xl py-2">Cổng thanh toán</h2>
-            <h1 class="font-bold text-4xl pt-16 pb-2">Ví điện tử hàng đầu tại Lào</h1>
-            <hr style="background-color: #FF5C01;border-radius: 20px;height: 5px;width: 20%">
-            <p class="py-4">Các dịch vụ U-money cung cấp sẽ giúp Khách hàng tối ưu hóa cuộc sống của mình với những giao dịch nhanh chóng, an toàn, thuận tiện nhất. Bên cạnh đó, U-money cũng giới thiệu tài khoản Tiền di động (Mobile Money), tạo điều kiện cho Khách hàng sử dụng chính thuê bao viễn thông để thực hiện các giao dịch Chuyển tiền và Thanh toán:</p>
-            <p class="pb-4"><span class="font-bold">Chuyển, nhận tiền dễ dàng:</span> Chuyển nhận tiền miễn phí, mọi lúc mọi nơi giữa các số điện thoại, số tài tài khoản liên ngân hàng và giao nhận tận tay Khách hàng.</p>
-            <p class="pb-4"><span class="font-bold">Thanh toán:</span> Với hệ thống hàng nghìn điểm giao dịch và chấp nhận thanh toán phủ khắp Lào, việc thanh toán nay đã dễ dàng hơn với U-money.</p>
-            <p class="pb-4"><span class="font-bold">Các dịch vụ tài chính đa dạng khác:</span> tiện dụng chỉ trong vài thao tác như bảo hiểm, đầu tư, vay…</p>
+        <div id="default-tab-content">
+            <div class="hidden rounded-lg" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="w-3/5 m-auto grid grid-cols-2 gap-8 ">
+                    <div>
+                        <img src="/assets/img/img-product.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-4xl pt-16 pb-2">Ví điện tử hàng đầu tại Lào</h1>
+                        <hr style="background-color: #FF5C01;border-radius: 20px;height: 5px;width: 20%">
+                        <p class="py-4">Các dịch vụ U-money cung cấp sẽ giúp Khách hàng tối ưu hóa cuộc sống của mình với những giao dịch nhanh chóng, an toàn, thuận tiện nhất. Bên cạnh đó, U-money cũng giới thiệu tài khoản Tiền di động (Mobile Money), tạo điều kiện cho Khách hàng sử dụng chính thuê bao viễn thông để thực hiện các giao dịch Chuyển tiền và Thanh toán:</p>
+                        <p class="pb-4"><span class="font-bold">Chuyển, nhận tiền dễ dàng:</span> Chuyển nhận tiền miễn phí, mọi lúc mọi nơi giữa các số điện thoại, số tài tài khoản liên ngân hàng và giao nhận tận tay Khách hàng.</p>
+                        <p class="pb-4"><span class="font-bold">Thanh toán:</span> Với hệ thống hàng nghìn điểm giao dịch và chấp nhận thanh toán phủ khắp Lào, việc thanh toán nay đã dễ dàng hơn với U-money.</p>
+                        <p class="pb-4"><span class="font-bold">Các dịch vụ tài chính đa dạng khác:</span> tiện dụng chỉ trong vài thao tác như bảo hiểm, đầu tư, vay…</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden rounded-lg" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+                <div class="w-3/5 m-auto grid grid-cols-2 gap-8">
+                    <div>
+                        <img src="/assets/img/img-product.png" alt="">
+                    </div>
+                    <div >
+                        <h1 class="font-bold text-4xl pt-16 pb-2">Ví điện tử hàng đầu tại Lào 2</h1>
+                        <hr style="background-color: #FF5C01;border-radius: 20px;height: 5px;width: 20%">
+                        <p class="py-4">Các dịch vụ U-money cung cấp sẽ giúp Khách hàng tối ưu hóa cuộc sống của mình với những giao dịch nhanh chóng, an toàn, thuận tiện nhất. Bên cạnh đó, U-money cũng giới thiệu tài khoản Tiền di động (Mobile Money), tạo điều kiện cho Khách hàng sử dụng chính thuê bao viễn thông để thực hiện các giao dịch Chuyển tiền và Thanh toán:</p>
+                        <p class="pb-4"><span class="font-bold">Chuyển, nhận tiền dễ dàng:</span> Chuyển nhận tiền miễn phí, mọi lúc mọi nơi giữa các số điện thoại, số tài tài khoản liên ngân hàng và giao nhận tận tay Khách hàng.</p>
+                        <p class="pb-4"><span class="font-bold">Thanh toán:</span> Với hệ thống hàng nghìn điểm giao dịch và chấp nhận thanh toán phủ khắp Lào, việc thanh toán nay đã dễ dàng hơn với U-money.</p>
+                        <p class="pb-4"><span class="font-bold">Các dịch vụ tài chính đa dạng khác:</span> tiện dụng chỉ trong vài thao tác như bảo hiểm, đầu tư, vay…</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 <!-- Những con số nổi bật -->

@@ -47,52 +47,71 @@
     </div>
 <!-- Dang ki nap sieu de -->
 <div class="tutorial">
-    <div class="bg-[url('../assets/img/background.png')] bg-indigo-500">
-        <div class="w-3/5 m-auto flex flex-col">
-            <div class="flex flex-row gap-6 m-auto">
-                <a class="border-2 px-16 py-2 text-black font-medium rounded-lg shadow-xl bg-white hover:bg-[#F6601B] hover:text-white" href="#">Đăng ký/ Đăng nhập</a>
-                <a class="border-2 px-16 py-2 text-black font-medium rounded-lg shadow-xl bg-white hover:bg-[#F6601B] hover:text-white" href="#">Nạp tiền vào U-Money</a>
-                <a class="border-2 px-16 py-2 text-black font-medium rounded-lg shadow-xl bg-white hover:bg-[#F6601B] hover:text-white" href="#">Kích hoạt</a>
+    <div class="bg-[url('../assets/img/background.png')] bg-indigo-500 py-8">
+        <div>
+            <div class="w-2/5 m-auto">
+                <ul class="flex justify-center flex-wrap -mb-px text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+                    <li class="me-2 mx-auto" role="presentation">
+                        <button class="inline-block px-16 py-2 bg-white font-medium rounded-lg shadow-xl focus:bg-[#F6601B] focus:text-white" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Đăng ký/ Đăng nhập</button>
+                    </li>
+                    <li class="me-2 mx-auto" role="presentation">
+                        <button class="inline-block px-16 py-2 bg-white text-black font-medium rounded-lg shadow-xl focus:bg-[#F6601B] focus:text-white" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Nạp tiền vào U-Money</button>
+                    </li>
+                    <li class="me-2 mx-auto" role="presentation">
+                        <button class="inline-block px-16 py-2 bg-white text-black font-medium rounded-lg shadow-xl focus:bg-[#F6601B] focus:text-white" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Kích hoạt</button>
+                    </li>
+                </ul>
             </div>
-            <div class="grid grid-cols-2 m-auto">
-                <div class="py-8 flex justify-center ">
-                    <img src="../assets/img/mobile_product.png" alt="">
+            <div class="w-3/5 m-auto" id="default-tab-content">
+                <div class="hidden p-4 rounded-lg bg-opacity-0" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="grid grid-cols-2 m-auto">
+                        <div class="py-8 flex justify-center ">
+                            <img src="../assets/img/mobile_product.png" alt="">
+                        </div>
+                        <div class="flex flex-col py-8 w-full">
+                            <ol class="relative text-gray-500 border-l border-[#F63618] mx-auto">                  
+                                <li class="mb-10 ml-6">            
+                                    <span class="absolute flex text-white items-center justify-center w-8 h-8 bg-[#F63618] rounded-full -left-4  hover:bg-[#F63618]">
+                                        1
+                                    </span>
+                                    <h3 class="text-xl font-medium text-black leading-tight">
+                                        Tải ứng dụng U-Money</h3>
+                                    <p class="text-sm pt-4 text-black">
+                                        Tải miễn phí bằng cách tìm kiếm ứng dụng <span class="font-bold text-[#F6601B]">U-money</span> trên <span class="font-bold">App Store</span> hoặc <span class="font-bold">Google Play Store</span>
+                                    </p>
+                                </li>
+                                <li class="mb-10 ml-6 py-4">
+                                    <span class="absolute flex items-center justify-center w-8 h-8 text-white rounded-full -left-4 bg-[#A0A0A0] hover:bg-[#F63618]">
+                                        2
+                                    </span>
+                                    <h3 class="text-xl font-medium  text-black leading-tight">Nhập số điện thoại và xác nhận mã OTP gửi qua tin nhắn</h3>
+                                </li>
+                                <li class="mb-10 ml-6 py-4">
+                                    <span class="absolute flex items-center justify-center w-8 h-8 text-white rounded-full -left-4 bg-[#A0A0A0] hover:bg-[#F63618]">
+                                        3
+                                    </span>
+                                    <h3 class="text-xl font-medium  text-black leading-tight">Tại màn hình trang chủ - chọn “Xác thực thông tin”</h3>
+                                </li>
+                                <li class="ml-6 pt-4">
+                                    <span class="absolute flex items-center justify-center w-8 h-8 text-white rounded-full -left-4 bg-[#A0A0A0] hover:bg-[#F63618]">
+                                        4   
+                                    </span>
+                                    <h3 class="text-xl font-medium  text-black leading-tight">Xác thực thành công - hoàn tất đăng ký</h3>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex flex-col py-8 w-full">
-                    <ol class="relative text-gray-500 border-l border-[#F63618] dark:border-[#F63618] dark:text-gray-400 mx-auto">                  
-                        <li class="mb-10 ml-6">            
-                            <span class="absolute flex text-white items-center justify-center w-8 h-8 bg-[#F63618] rounded-full -left-4  hover:bg-[#F63618]">
-                                1
-                            </span>
-                            <h3 class="text-xl font-medium text-black leading-tight">
-                                Tải ứng dụng U-Money</h3>
-                            <p class="text-sm pt-4 text-black">
-                                Tải miễn phí bằng cách tìm kiếm ứng dụng <span class="font-bold text-[#F6601B]">U-money</span> trên <span class="font-bold">App Store</span> hoặc <span class="font-bold">Google Play Store</span></p>
-                        </li>
-                        <li class="mb-10 ml-6 py-4">
-                            <span class="absolute flex items-center justify-center w-8 h-8 bg-gray-100 text-white rounded-full -left-4 dark:bg-[#A0A0A0] hover:bg-[#F63618]">
-                                2
-                            </span>
-                            <h3 class="text-xl font-medium  text-black leading-tight">Nhập số điện thoại và xác nhận mã OTP gửi qua tin nhắn</h3>
-                        </li>
-                        <li class="mb-10 ml-6 py-4">
-                            <span class="absolute flex items-center justify-center w-8 h-8 bg-gray-100 text-white rounded-full -left-4 dark:bg-[#A0A0A0] hover:bg-[#F63618]">
-                                3
-                            </span>
-                            <h3 class="text-xl font-medium  text-black leading-tight">Tại màn hình trang chủ - chọn “Xác thực thông tin”</h3>
-                        </li>
-                        <li class="ml-6 pt-4">
-                            <span class="absolute flex items-center justify-center w-8 h-8 bg-gray-100 text-white rounded-full -left-4 dark:bg-[#A0A0A0] hover:bg-[#F63618]">
-                                4   
-                            </span>
-                            <h3 class="text-xl font-medium  text-black leading-tight">Xác thực thành công - hoàn tất đăng ký</h3>
-                        </li>
-                    </ol>
+                <div class="hidden p-4 rounded-lg  bg-opacity-0" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+                    <p class="text-center text-gray-500">Nạp tiền vào</strong> U-money.</p>
+                </div>
+                <div class="hidden p-4 rounded-lg bg-gray-50 bg-opacity-0" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                    <p class="text-center text-gray-500">Kích hoạt ngay</strong> U-money.</p>
                 </div>
             </div>
-        </div>
-        <div class="w-3/5 m-auto text-center py-12">
-            <a class="rounded-full bg-[#F6601B] text-white place-items-center py-4 px-8 shadow-xl shadow-orange-500" href="#">➞Xem tất cả</a>
+            <div class="w-3/5 m-auto text-center py-12">
+                <a class="rounded-full bg-[#F6601B] text-white place-items-center py-4 px-8 shadow-xl shadow-orange-500" href="#">➞Xem tất cả</a>
+            </div>
         </div>
     </div>
 </div>
